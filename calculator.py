@@ -18,3 +18,6 @@ class Calculator(object):
         ret = x * y
         self.x = ret
         return ret
+
+    def div(self, x, y):
+        return x/y

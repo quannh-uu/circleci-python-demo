@@ -15,6 +15,18 @@ class Calc0TestCaseSub(unittest.TestCase):
         assert calc.sub(1, 2) == -1, "substraction is wrong"
 
 
+class Calc0TestCaseDiv(unittest.TestCase):
+    def runTest(self):
+        calc = Calculator()
+        assert calc.div(2, 1) == 2, "division is wrong"
+
+
+class Calc0TestCaseDivByZero(unittest.TestCase):
+    def runTest(self):
+        calc = Calculator()
+        assert calc.div(2, 0) == "Can not div by zero", "division is wrong"
+
+
 def getTestSuite():
     suite = unittest.TestSuite()
     suite.addTest(Calc0TestCaseAdd())
