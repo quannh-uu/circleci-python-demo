@@ -20,4 +20,6 @@ class Calculator(object):
         return ret
 
     def div(self, x, y):
+        if y == 0:
+            return "Can not div by zero"
         return x/y
